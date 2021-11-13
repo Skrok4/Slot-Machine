@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+a{
+	color: #283593;
+	text-decoration: none;
+}
+h3{
+	margin-top: 12px;
+}
+*{
+	margin:0px;
+}
+body{
+	background: url(img/back.jpg) no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+main{
+	
+	border-radius: 5px;
+	background-color: #f5e1c6;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: calc((100% - 580px) / 2);
+	width: 560px;
+}
+ #status{
+	margin-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color:#311d1c;
+	color: #FFFFFF;
+	font-size: 25px;
+
+}
+
+ #game{
+	margin-top: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #C62828;
+	color: #FFFFFF;
+	font-size: 25px;
+	cursor: pointer;
+}
+ #game:hover{
+	background-color: #ba1013;
+}
+ #playerScore{
+	margin-top: 20px;
+	padding-top: 5px;
+	border-radius: 5px;
+	background-color: #311d1c;
+	color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+	line-height: 1.5;
+}
+.option{
+	padding-left: 5px;
+}
+ #info{
+	background-color: #616161;
+	padding-left: 12px;
+	padding-bottom: 12px;
+	border-radius: 5px;
+	overflow: hidden;
+	animation-duration: 1s;
+	color: #BDBDBD;
+	margin-top: 50px;
+	margin-left: 30%;
+	margin-right: 30%;
+	display: none;
+}
+#Slots{
+	border-radius: 15px;
+	background-color: #fff7eb;
+}
+#slot1, #slot2, #slot3{
+	display: inline-block;
+	margin-top: 5px;
+	background-size: 170px;
+	width: 170px;
+	height: 170px;
+	padding: -15px;
+}
+#slot1, #slot2{
+border-right-color: black;
+border-right-style: solid; 
+border-right-width: 3px; 
+}
+#slot1{
+margin-left: 10px;
+margin-right: 10px;
+padding-right: 2px;
+
+}
+ #slot2{
+	padding-left: 2px;
+} 
+#slot3{
+	margin-left: 10px;
+} 
+.a1{
+	background-image: url("img/seven.jpg");
+}
+.a2{
+	background-image: url("img/horseshoe.jpg");
+}
+.a3{
+	background-image: url("img/apple.jpg");
+}
+.a4{
+	background-image: url("img/cherry.jpg");
+}
+.a5{
+	background-image: url("img/diamond.jpg");
+}
+.a6{
+	background-image: url("img/lemon.jpg");
+}
+.a7{
+	background-image: url("img/joker.jpg");
+}
+
+/* Preload */
+#preloader {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	opacity: 1;
+	transition: all .3s ease-in-out;
+}
+.done {
+	opacity: 0 !important;
+}
+.hide {
+	display: none !important;
+}
+.cssload-st-loader {
+	width: 10em;
+	height: 2.5em;
+	position: absolute;
+	left: 50%;
+	margin: -1.25em 0 0 -5em;
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+.cssload-st-loader:before,
+.cssload-st-loader:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1.25em;
+	border: 0.25em solid rgba(248,248,220,0.97);
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+.cssload-st-loader:before {
+	left: -0.76923em;
+	border-right: 0;
+}
+
+.cssload-st-loader:after {
+	right: -0.76923em;
+	border-left: 0;
+}
+
+.cssload-st-loader .cssload-equal {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5em;
+	left: 4.16667em;
+	height: 1em;
+	width: 1.66667em;
+	border: 0.25em solid rgb(249,36,114);
+	border-width: 0.25em 0;
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	animation: cssload-loading 1.73s infinite ease-in-out;
+		-o-animation: cssload-loading 1.73s infinite ease-in-out;
+		-ms-animation: cssload-loading 1.73s infinite ease-in-out;
+		-webkit-animation: cssload-loading 1.73s infinite ease-in-out;
+		-moz-animation: cssload-loading 1.73s infinite ease-in-out;
+}
+
+
+
+@keyframes cssload-loading {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 8.33333em;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-o-keyframes cssload-loading {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 8.33333em;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-ms-keyframes cssload-loading {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 8.33333em;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-webkit-keyframes cssload-loading {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 8.33333em;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-moz-keyframes cssload-loading {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 8.33333em;
+	}
+	100% {
+		left: 0;
+	}
+}
